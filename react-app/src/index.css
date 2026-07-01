@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --duration-normal: 300ms;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-kardelen-cream font-body text-kardelen-ink antialiased;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+
+  ::selection {
+    @apply bg-kardelen-orange/25 text-kardelen-ink;
+  }
+}
+
+@layer components {
+  /* Kesikli, editoryal bölüm başlığı */
+  .section-eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5
+           text-sm font-bold uppercase tracking-wider shadow-card;
+  }
+
+  /* Yumuşak, çocuksu gradient arka plan lekesi */
+  .blob {
+    @apply pointer-events-none absolute -z-10 blur-2xl opacity-60;
+  }
+}
+
+/* Hareketi azaltmayı tercih eden kullanıcılar için erişilebilirlik */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

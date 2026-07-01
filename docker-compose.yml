@@ -1,0 +1,21 @@
+# Yerelde İKİ sürümü de aynı anda çalıştırmak için:
+#   docker compose up -d --build
+#   • HTML sürümü   → http://localhost:8081
+#   • React sürümü  → http://localhost:8080
+#
+# Not: Coolify'da bu dosyayı KULLANMAYIN. Coolify'da her klasör (react-app / html-site)
+# ayrı bir "Application" olarak, Base Directory + Dockerfile ile deploy edilir.
+services:
+  react-app:
+    build: ./react-app
+    container_name: kardelen-react
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+
+  html-site:
+    build: ./html-site
+    container_name: kardelen-html
+    restart: unless-stopped
+    ports:
+      - "8081:80"
