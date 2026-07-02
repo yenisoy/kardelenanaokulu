@@ -85,13 +85,16 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          <motion.div
+          <motion.a
             variants={item}
-            className="mt-8 flex items-center gap-2 text-sm font-600 text-kardelen-ink-soft"
+            href={SCHOOL.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 flex items-center gap-2 text-sm font-600 text-kardelen-ink-soft transition-colors hover:text-kardelen-sky"
           >
             <MapPin className="h-4 w-4 text-kardelen-sky" />
             Esenler Mah. Çayır Sk. No:4, Pendik / İstanbul
-          </motion.div>
+          </motion.a>
         </motion.div>
 
         {/* Görsel alanı */}

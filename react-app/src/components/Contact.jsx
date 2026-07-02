@@ -4,9 +4,7 @@ import Logo from './Logo'
 import WhatsAppIcon from './WhatsAppIcon'
 import { SCHOOL, WHATSAPP_URL } from '../data/content'
 
-const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  SCHOOL.address,
-)}`
+const mapsUrl = SCHOOL.mapsUrl
 
 export default function Contact() {
   return (

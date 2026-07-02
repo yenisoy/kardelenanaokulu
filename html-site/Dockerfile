@@ -4,8 +4,8 @@ FROM nginx:1.27-alpine
 # Özel nginx yapılandırması (gzip + cache + güvenlik başlıkları)
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# index.html + assets/ klasörünü kopyala
-COPY index.html /usr/share/nginx/html/index.html
+# index.html + assets/ + SEO dosyalarını kopyala
+COPY index.html robots.txt sitemap.xml /usr/share/nginx/html/
 COPY assets /usr/share/nginx/html/assets
 
 EXPOSE 80

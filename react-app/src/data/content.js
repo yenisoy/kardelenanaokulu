@@ -19,6 +19,7 @@ export const SCHOOL = {
   phoneRaw: '905526995773',
   instagramHandle: '@ozelpendikkardelenanaokulu',
   instagramUrl: 'https://instagram.com/ozelpendikkardelenanaokulu',
+  mapsUrl: 'https://maps.app.goo.gl/nS5oX1Wqfx3DSsGz5',
   whatsappMessage:
     'Merhaba, Kardelen Anaokulu hakkında kayıt bilgisi almak istiyorum.',
 }

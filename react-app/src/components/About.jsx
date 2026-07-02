@@ -14,8 +14,8 @@ const HIGHLIGHTS = [
   },
   {
     icon: ShieldCheck,
-    title: 'Güvenli Kampüs',
-    desc: 'Mahremiyete önem veren, çocuk odaklı ve denetimli bir kurum.',
+    title: 'Güvenli & Denetimli',
+    desc: 'Mahremiyete önem veren, çocuk odaklı ve sürekli gözetim altında güvenli bir ortam.',
   },
   {
     icon: Palette,
