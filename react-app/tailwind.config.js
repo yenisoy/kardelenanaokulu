@@ -24,7 +24,7 @@ export default {
         },
       },
       fontFamily: {
-        display: ['"Fredoka"', 'system-ui', 'sans-serif'],
+        display: ['"Baloo 2"', 'system-ui', 'sans-serif'],
         body: ['"Nunito"', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
